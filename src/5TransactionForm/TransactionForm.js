@@ -14,6 +14,7 @@ function TransactionForm() {
 
     const onSubmit = e => {
         //##############try removing this later to see what happens##############
+        //the form does nothing then
         e.preventDefault();
 
         const newTransaction = {
