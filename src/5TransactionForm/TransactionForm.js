@@ -14,7 +14,7 @@ function TransactionForm() {
 
     const onSubmit = e => {
         //##############try removing this later to see what happens##############
-        //e.preventDefault();
+        e.preventDefault();
 
         const newTransaction = {
             id: Math.floor(Math.random()*100000000),
