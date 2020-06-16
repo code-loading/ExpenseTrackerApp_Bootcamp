@@ -16,7 +16,7 @@ function IncomeExpense() {
     //.filter .reduce .toFixed
     const income = amounts
     .filter(item => item > 0)
-    .reduce((acc, item) => acc += item, 0)
+    .reduce((acc, item) => (acc += item), 0)
     .toFixed(2);
 
     //Note this format similar to above but the default array funcions have been written
