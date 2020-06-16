@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { GlobalContext } from '../6Context/GlobalState';
 
-function Balance() {
+export const Balance = () => {
     const { transactions } = useContext(GlobalContext);
 
     //a mapped array outputs another array. Here we are taking out the amount 
@@ -20,4 +20,4 @@ function Balance() {
     </div>);
 }
 
-export default Balance;
+//export default Balance;

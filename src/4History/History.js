@@ -2,13 +2,13 @@ import React, { useContext } from "react";
 import { GlobalContext } from "../6Context/GlobalState";
 import { Transaction } from './Transaction'
 
-function History() {
+export const History = () => {
     //getting the array directly which is within GlobalContext
     //as opposed to having to do context.transactions
     const { transactions } = useContext(GlobalContext);
 
     
-    return(<div>
+    return(<>
         <h3>History</h3>
         {/**Transactions tag below needs to be told which transaction to render through transaction={transaction}
          * which is being mapped through. and key={transaction.id} is because the list elements should have a unique
@@ -19,7 +19,7 @@ function History() {
             {transactions.map(transaction => (<Transaction key={transaction.id} transaction={transaction}/>))}
             
         </ul>
-    </div>);
+    </>);
 }
 
-export default History;
+//export default History;

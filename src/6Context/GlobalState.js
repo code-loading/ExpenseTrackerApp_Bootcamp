@@ -1,11 +1,11 @@
 import React, { createContext, useReducer } from 'react';
 import AppReducer from './AppReducer';
 
-//Initial State, dummy transaction data
+//Initial State, 
 const initialState = {
     transactions: []
 }
-
+//dummy transaction data, place into initial state
 /* {id: 1, text: "Bouquet", amount: -20},
         {id: 2, text: "Da Money", amount: 300},
         {id: 3, text: "Books", amount: -10},

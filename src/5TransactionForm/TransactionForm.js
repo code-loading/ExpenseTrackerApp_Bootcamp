@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { GlobalContext } from '../6Context/GlobalState';
 
-function TransactionForm() {
+export const TransactionForm = () => {
     
     //created state for the amount and purpose of transaction
     const [text, setText] = useState('');
@@ -30,7 +30,7 @@ function TransactionForm() {
         addTransaction(newTransaction);
     }
 
-    return(<div>
+    return(<>
         <h3>Add new transactions</h3>
         <form onSubmit={onSubmit}>
             <div className="form-control">
@@ -51,7 +51,7 @@ function TransactionForm() {
             </div>
             <button className="btn">Add transaction</button>
         </form>
-    </div>);
+    </>);
 }
 
-export default TransactionForm;
+//export default TransactionForm;

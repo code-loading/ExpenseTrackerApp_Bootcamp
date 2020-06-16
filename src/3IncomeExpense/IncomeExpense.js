@@ -5,7 +5,7 @@ import { GlobalContext } from '../6Context/GlobalState';
 
 //Issues: Income and Expense vales aren't showing in red/green
 
-function IncomeExpense() {
+export const IncomeExpense = () => {
     const { transactions } = useContext(GlobalContext);
 
     //putting amount from transactions into our own amounts array,
@@ -39,4 +39,4 @@ function IncomeExpense() {
     </div>);
 }
 
-export default IncomeExpense;
+//export default IncomeExpense;
